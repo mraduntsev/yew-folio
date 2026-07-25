@@ -1,0 +1,434 @@
+{
+  "hero": {
+    "buttons": {
+      "primary": "View projects",
+      "secondary": "Download CV",
+      "tertiary": "Get in touch",
+      "dot": "Available for new projects"
+    },
+    "greeting": "Hi, I'm",
+    "name": "Maxim",
+    "build_intro": "I build",
+    "typed_phrases": [
+      "fast systems",
+      "safe abstractions",
+      "clean APIs",
+      "reliable services"
+    ],
+    "role": "Backend Developer",
+    "skills": [
+      "Rust",
+      "C++",
+      "Python"
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "label": "years"
+      },
+      {
+        "value": "15+",
+        "label": "projects"
+      },
+      {
+        "value": "5",
+        "label": "open source"
+      }
+    ],
+    "links": {
+      "projects": "#projects",
+      "resume": "assets/resume.pdf",
+      "contact": "#contact",
+      "github": null
+    },
+    "description": [
+      {
+        "type": "plain",
+        "text": "Backend engineer focused on "
+      },
+      {
+        "type": "highlight",
+        "text": "Rust",
+        "color": "text-rust-500"
+      },
+      {
+        "type": "plain",
+        "text": ", "
+      },
+      {
+        "type": "highlight",
+        "text": "C++",
+        "color": ""
+      },
+      {
+        "type": "plain",
+        "text": " and "
+      },
+      {
+        "type": "highlight",
+        "text": "Python",
+        "color": ""
+      },
+      {
+        "type": "plain",
+        "text": ". I design low-latency services, high-performance APIs and reliable infrastructure that scales from prototype to production."
+      }
+    ]
+  },
+  "about": {
+    "number": "01 — about",
+    "title": "A bit about me",
+    "description": "I care about code that's boring in production — predictable, observable, and easy to delete.",
+    "principles": [
+      {
+        "icon": "bolt",
+        "title": "Performance-first",
+        "description": "From microsecond-latency trading systems to batch pipelines — I profile first, then optimize."
+      },
+      {
+        "icon": "shield",
+        "title": "Reliability-Obsessed",
+        "description": "Type systems, property tests, and defensive error handling. If it can fail, I catch it at compile time."
+      },
+      {
+        "icon": "terminal",
+        "title": "Intuitive APIs",
+        "description": "Interfaces should be self-explanatory. I design libraries and services that are a joy to use from day one."
+      }
+    ],
+    "skills": [
+      {
+        "gradient": "from-orange-600 to-red-700",
+        "letter": "R",
+        "title": "Rust",
+        "technologies": "tokio · axum · yew"
+      },
+      {
+        "gradient": "from-blue-600 to-blue-800",
+        "letter": "C++",
+        "title": "C++",
+        "technologies": "17/20 · cmake · qt"
+      },
+      {
+        "gradient": "from-yellow-400 to-blue-500",
+        "letter": "Py",
+        "title": "Python",
+        "technologies": "fastapi · django · pyqt/pyside · ml"
+      },
+      {
+        "gradient": "from-sky-500 to-indigo-700",
+        "letter": "Pg",
+        "title": "PostgreSQL",
+        "technologies": "query tuning · migrations"
+      },
+      {
+        "gradient": "from-cyan-400 to-blue-600",
+        "letter": "D",
+        "title": "Docker · K8s",
+        "technologies": "compose · helm"
+      },
+      {
+        "gradient": "from-ink-700 to-ink-900",
+        "letter": "🐧",
+        "title": "Linux",
+        "technologies": "nix · ubuntu · debian"
+      },
+      {
+        "gradient": "from-purple-500 to-pink-600",
+        "letter": "gR",
+        "title": "gRPC · Protobuf",
+        "technologies": "tonic · prost"
+      },
+      {
+        "gradient": "from-red-500 to-red-700",
+        "letter": "Rd",
+        "title": "Redis",
+        "technologies": "streams · pub/sub"
+      }
+    ],
+    "centered": false
+  },
+  "education": {
+    "number": "02 — education",
+    "title": "Learning path",
+    "description": "Formal CS background plus a steady diet of deep-dive courses and certifications.",
+    "entries": [
+      {
+        "university": "Chelyabinsk State University (CSU)",
+        "degree": "B.Sc. in Applied Mathematics and Computer Science",
+        "years": "2016 - 2021",
+        "description": "Rigorous program with a deep mathematical foundation and high selection standards. Graduated with strong academic standing, focusing on computational systems,   algorithm optimization, and data structures.",
+        "badge": "B.Sc.",
+        "highlights": [
+          "GPA: 4.36 / 5.0 — Very Good academic standing",
+          "Advanced Mathematical Modeling",
+          "Algorithms & Data Structures",
+          "Computational Systems"
+        ]
+      },
+      {
+        "university": "Ural State University of Railway Transport (USURT)",
+        "degree": "Postgraduate Researcher in Civil Engineering (Degree not conferred)",
+        "years": "2012 - 2015",
+        "description": "Successfully completed the full doctoral-level research cycle and coursework in structural engineering. Independently designed, bootstrapped, and executed industrial prototyping and mechanical testing at a manufacturing plant.",
+        "badge": "Research",
+        "highlights": [
+          "Co‑inventor of patented structural technology (Patent RU 2535761)",
+          "Managed end-to-end R&D cycle: design → manufacturing → physical testing",
+          "Applied mechanical analysis and mathematical modeling to validate hypotheses"
+        ]
+      },
+      {
+        "university": "Ural State University of Railway Transport (USURT)",
+        "degree": "Specialist Degree (M.Sc. equivalent) in Civil Engineering",
+        "years": "2000 - 2005",
+        "description": "Comprehensive 5-year engineering curriculum covering structural mechanics.",
+        "badge": "Specialist",
+        "highlights": [
+          "Industrial and Civil Construction specialization",
+          "Structural Mechanics & Material Science",
+          "Engineering Project Management"
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "year": "2026",
+        "hours": "50h",
+        "title": "Applied Rust & WebAssembly Development",
+        "provider": "Self-directed study",
+        "description": "Mastered Rust's core: ownership, borrowing, lifetimes, and traits. Built a portfolio site on Yew/WASM to apply concepts in a real project with Cargo workspace.",
+        "tags": [
+          "rust",
+          "yew",
+          "webassembly",
+          "cargo",
+          "async"
+        ]
+      },
+      {
+        "year": "2025",
+        "hours": "3 months",
+        "title": "DWH developer",
+        "provider": "T1 Digital Academy",
+        "description": "Designed and implemented MPP-based DWH architectures. Engineered ETL/ELT pipelines and data orchestration workflows using Apache Airflow. Deployed analytical workloads on Greenplum and Arenadata DB.",
+        "tags": [
+          "dwh",
+          "greenplum",
+          "airflow",
+          "etl"
+        ]
+      },
+      {
+        "year": "2023",
+        "hours": "200h",
+        "title": "Machine Learning and Data Analysis",
+        "provider": "MIPT & Yandex",
+        "description": "Rigorous specialization focusing on the mathematical foundations of ML (linear algebra, probability theory, optimization). Implemented classical algorithms (SVM, Ensemble Methods, Clustering) from scratch and via Scikit-learn, with a strong emphasis on statistical validation and data preprocessing.",
+        "tags": [
+          "machine learning",
+          "mathematics",
+          "scikit-learn",
+          "statistics"
+        ]
+      },
+      {
+        "year": "2022",
+        "hours": "24 months",
+        "title": "Data Science and Machine Learning",
+        "provider": "GB, Faculty of Artificial Intelligence",
+        "description": "Completed an extensive professional training program focused on the fundamentals of Data Science, covering mathematical foundations for machine learning, statistical analysis, and Python-based data processing.",
+        "tags": [
+          "pytorch",
+          "mlops",
+          "data engineering",
+          "python"
+        ]
+      },
+      {
+        "year": "2020",
+        "hours": "100h",
+        "title": "Deep Learning",
+        "provider": "Moscow Institute of Physics and Technology (MIPT) · Advanced training",
+        "description": "Advanced study of neural network architectures (CNNs, RNNs, generative models). Implemented custom training loops and optimization strategies in PyTorch for complex image recognition and time-series forecasting tasks.",
+        "tags": [
+          "pytorch",
+          "deep learning",
+          "computer vision",
+          "time-series"
+        ]
+      },
+      {
+        "year": "2019",
+        "hours": "18 months",
+        "title": "Advanced Software Engineering Program",
+        "provider": "GB, Python Faculty",
+        "description": "Intensive program focused on enterprise backend development, distributed system architecture, and relational database management. Designed and deployed production-ready desktop and web applications using PyQt, Django, and Vue.",
+        "tags": [
+          "python",
+          "django",
+          "system design",
+          "pyqt",
+          "vue"
+        ]
+      }
+    ],
+    "centered": false
+  },
+  "projects": {
+    "number": "03 — projects",
+    "title": "Selected work",
+    "description": {
+      "label": "view all on github",
+      "href": "https://click.scitechai.ru/gitearad"
+    },
+    "projects": [
+      {
+        "title": "yew-folio",
+        "description": "Personal portfolio built with Rust and Yew framework, compiled to WebAssembly for high-performance client-side rendering. Features component-based architecture with Tailwind CSS. Serves as a practical exploration of Rust's ownership model and systems programming in web development.",
+        "tags": [
+          "rust",
+          "yew"
+        ],
+        "gradient": "from-rust-500 via-rust-600 to-rust-800",
+        "version": "v0.1.0",
+        "stars": 1,
+        "forks": 0,
+        "featured": true,
+        "repo_url": "https://click.scitechai.ru/yewfolio"
+      },
+      {
+        "title": "q-mech",
+        "description": "Adapted SymPy documentation for structural engineering. Step-by-step examples for calculating beams and trusses, featuring Macaulay's method, interactive notebooks, and FEM verification workflows.",
+        "tags": [
+          "Python",
+          "simpy",
+          "beam",
+          "truss",
+          "Macaulay"
+        ],
+        "gradient": "from-blue-600 via-indigo-700 to-purple-800",
+        "version": "v1.0.0",
+        "stars": 2,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/qmech"
+      },
+      {
+        "title": "psow",
+        "description": "Technical research experiment evaluating the ergonomics, migration cost, and safety guarantees of two modern stacks — C++20 with Eigen and Rust — for porting a legacy C++/MFC finite element kernel. The scope is deliberately narrow: a single 15-node quadratic triangular prism (PSOW) element, with shape function formulas transcribed verbatim from the original reference implementation (math preserved bit-for-bit). The experiment is not production code; the repository serves as a working scratchpad for engineering notes and comparative observations prior to a full FEM kernel migration decision. Both ports are covered by an identical verification suite: partition of unity checks, Kronecker delta property at nodes, Jacobian non-singularity across the reference element, and derivative cross-validation against finite-difference approximations. The original computational code was authored by a third party and is used here as a reference with the author's consent; licensing of this repository and any further publication remain subject to separate agreement with the original author.",
+        "tags": [
+          "c++20",
+          "rust",
+          "eigen",
+          "fem",
+          "finite element method",
+          "shape functions",
+          "jacobian",
+          "partition of unity",
+          "kronecker delta",
+          "finite differences",
+          "numerical methods",
+          "scientific computing",
+          "serendipity elements"
+        ],
+        "gradient": "from-emerald-700 via-teal-800 to-slate-900",
+        "version": "v1.0.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/psow"
+      },
+      {
+        "title": "t1dwh",
+        "description": "Academic prototype (2024 – early 2025) exploring distributed Data Warehouse (DWH) architectural patterns on Greenplum (MPP, PostgreSQL-based) with Apache Airflow for deterministic ETL orchestration. The project formalizes evaluation of DWH topologies (Kimball 1-2NF vs Inmon 3NF vs Data Vault) and executes a Kimball-derived dimensional model optimized for OLAP query patterns. Core engineering deliverables include a multi-tiered data architecture (Staging, DDS, Data Marts), implementation of Slowly Changing Dimensions (SCD Type 2) via hash-based change detection (MD5) for temporal data consistency, and storage engine optimization via columnar orientation, ZSTD/RLE compression algorithms, and range partitioning. The ETL subsystem utilizes postgres_fdw for federated data ingestion, Airflow DAGs with XCom for stateful inter-task coordination, and PL/pgSQL functions for incremental loading with high-water mark semantics. The prototype enforces idempotency, rigorous exception handling with quarantine patterns, and transaction isolation analysis (Repeatable Read, Serializable) for data consistency guarantees.",
+        "tags": [
+          "greenplum",
+          "postgresql",
+          "apache airflow",
+          "dimensional modeling",
+          "kimball",
+          "scd type 2",
+          "columnar storage",
+          "zstd",
+          "rle",
+          "range partitioning",
+          "etl",
+          "data marts"
+        ],
+        "gradient": "bg-gradient-to-r from-fuchsia-600 to-purple-600",
+        "version": "v1.0.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/t1dwh"
+      },
+      {
+        "title": "SteelFrame Hub",
+        "description": "A high-load enterprise web platform for a steel frame manufacturing company, combining an online store with complex engineering tools. The system features a robust corporate website, a seamless user account dashboard, and custom dynamic price calculators. It hosts an SEO-optimized blog with 200+ technical articles and integrates a comprehensive testing system with diverse quizzes on structural design and programming. Built with a full-scale feedback loop, including user comments, ratings, and likes across all modules.",
+        "tags": [
+          "django",
+          "python",
+          "postgresql",
+          "e-commerce",
+          "blog"
+        ],
+        "gradient": "from-slate-700 via-cyan-800 to-emerald-950",
+        "version": "v1.1.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/scitech"
+      }
+    ],
+    "centered": false
+  },
+  "contact": {
+    "number": "04 — contact",
+    "title": "Let's build something",
+    "description": "Have a project in mind, a tricky backend problem, or just want to chat about Python? My inbox is open.",
+    "channels": [
+      {
+        "label": "email",
+        "value": "raduntsev.mv@gmail.com",
+        "icon": "mail",
+        "url": "mailto:raduntsev.mv@gmail.com",
+        "description": "Best for project inquiries"
+      },
+      {
+        "label": "telegram",
+        "value": "@reliable_it",
+        "icon": "telegram",
+        "url": "https://t.me/reliable_it",
+        "description": "Quick replies, usually"
+      },
+      {
+        "label": "github",
+        "value": "@mraduntsev",
+        "icon": "github",
+        "url": "https://github.com/mraduntsev",
+        "description": "Code, issues, PRs"
+      },
+      {
+        "label": "linkedin",
+        "value": "/in/maxim-raduntsev",
+        "icon": "linkedin",
+        "url": "https://linkedin.com/in/maxim-raduntsev",
+        "description": "Professional network"
+      }
+    ],
+    "centered": true
+  },
+  "navbar": {
+    "nav": [
+      { "label": "About", "href": "#about" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "buttons": {
+      "primary": "Hire me",
+      "outline": "Resume"
+    }
+  }
+}

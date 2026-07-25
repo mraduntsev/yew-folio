@@ -1,0 +1,420 @@
+{
+  "hero": {
+    "buttons": {
+      "primary": "Смотреть проекты",
+      "secondary": "Скачать резюме",
+      "tertiary": "Связаться",
+      "dot": "Открыт для предложений"
+    },
+    "greeting": "Здравствуйте, я",
+    "name": "Максим Радунцев",
+    "build_intro": "Я создаю",
+    "typed_phrases": [
+      "быстрые системы",
+      "безопасные абстракции",
+      "чистые API",
+      "надёжные сервисы"
+    ],
+    "role": "Backend-разработчик",
+    "skills": [
+      "Rust",
+      "C++",
+      "Python"
+    ],
+    "stats": [
+      {
+        "value": "5+",
+        "label": "лет опыта"
+      },
+      {
+        "value": "15+",
+        "label": "проектов"
+      },
+      {
+        "value": "5",
+        "label": "open source"
+      }
+    ],
+    "links": {
+      "projects": "#projects",
+      "resume": "assets/resume.pdf",
+      "contact": "#contact",
+      "github": null
+    },
+    "description": [
+      {
+        "type": "plain",
+        "text": "Backend-разработчик, специализируюсь на "
+      },
+      {
+        "type": "highlight",
+        "text": "Rust",
+        "color": "text-rust-500"
+      },
+      {
+        "type": "plain",
+        "text": ", "
+      },
+      {
+        "type": "highlight",
+        "text": "C++",
+        "color": ""
+      },
+      {
+        "type": "plain",
+        "text": " and "
+      },
+      {
+        "type": "highlight",
+        "text": "Python",
+        "color": ""
+      },
+      {
+        "type": "plain",
+        "text": ". Проектирую низколатентные сервисы, высокопроизводительные API и надёжную инфраструктуру, которая масштабируется от прототипа до продакшена."
+      }
+    ]
+  },
+  "about": {
+    "number": "01 — обо мне",
+    "title": "Немного обо мне",
+    "description": "Я пишу код, который скучен в продакшене — предсказуемый, наблюдаемый и легко удаляемый.",
+    "principles": [
+      {
+        "icon": "bolt",
+        "title": "Производительность превыше всего",
+        "description": "От систем с микросекундной задержкой до пакетной обработки — сначала профилирую, потом оптимизирую."
+      },
+      {
+        "icon": "shield",
+        "title": "Одержим надёжностью",
+        "description": "Типизация, property-тесты и аккуратная обработка ошибок. Если что-то может сломаться — хочу узнать об этом на этапе компиляции."
+      },
+      {
+        "icon": "terminal",
+        "title": "Интуитивные API",
+        "description": "Интерфейс должен быть понятен без документации. Проектирую библиотеки и сервисы, с которыми удобно работать с первого дня."
+      }
+    ],
+    "skills": [
+      {
+        "gradient": "from-orange-600 to-red-700",
+        "letter": "R",
+        "title": "Rust",
+        "technologies": "tokio · axum · yew"
+      },
+      {
+        "gradient": "from-blue-600 to-blue-800",
+        "letter": "C++",
+        "title": "C++",
+        "technologies": "17/20 · cmake · qt"
+      },
+      {
+        "gradient": "from-yellow-400 to-blue-500",
+        "letter": "Py",
+        "title": "Python",
+        "technologies": "fastapi · django · pyqt/pyside · ml"
+      },
+      {
+        "gradient": "from-sky-500 to-indigo-700",
+        "letter": "Pg",
+        "title": "PostgreSQL",
+        "technologies": "query tuning · migrations"
+      },
+      {
+        "gradient": "from-cyan-400 to-blue-600",
+        "letter": "D",
+        "title": "Docker · K8s",
+        "technologies": "compose · helm"
+      },
+      {
+        "gradient": "from-ink-700 to-ink-900",
+        "letter": "🐧",
+        "title": "Linux",
+        "technologies": "nix · ubuntu · debian"
+      },
+      {
+        "gradient": "from-purple-500 to-pink-600",
+        "letter": "gR",
+        "title": "gRPC · Protobuf",
+        "technologies": "tonic · prost"
+      },
+      {
+        "gradient": "from-red-500 to-red-700",
+        "letter": "Rd",
+        "title": "Redis",
+        "technologies": "streams · pub/sub"
+      }
+    ],
+    "centered": false
+  },
+  "education": {
+    "number": "02 — образование",
+    "title": "Путь обучения",
+    "description": "Образование в области компьютерных наук и систематическое прохождение  курсов и сертификаций.",
+    "entries": [
+      {
+        "university": "Челябинский государственный университет (ЧелГУ)",
+        "degree": "Бакалавр прикладной математики и информатики",
+        "years": "2016 - 2021",
+        "description": "Программа с математической подготовкой и высокими стандартами отбора.",
+        "badge": "Бакалавр",
+        "highlights": [
+          "Средний балл: 4.36 / 5.0 — Отличная успеваемость",
+          "Продвинутое математическое моделирование",
+          "Алгоритмы и структуры данных",
+          "Вычислительные системы"
+        ]
+      },
+      {
+        "university": "Уральский государственный университет путей сообщения (УрГУПС)",
+        "degree": "Аспирант в области гражданского строительства (Диплом не присвоен)",
+        "years": "2012 - 2015",
+        "description": "Самостоятельно инициировал и провёл промышленное прототипирование и механические испытания на производственной площадке.",
+        "badge": "Исследования",
+        "highlights": [
+          "Соавтор патента (Патент RU 2535761)",
+          "Вёл полный цикл НИОКР: от проектирования и производства до натурных испытаний",
+          "Применял методы механического анализа и математического моделирования для верификации гипотез"
+        ]
+      },
+      {
+        "university": "Уральский государственный университет путей сообщения (УрГУПС)",
+        "degree": "Диплом специалиста в области гражданского строительства",
+        "years": "2000 - 2005",
+        "description": "Комплексная 5-летняя инженерная программа, охватывающая строительную механику.",
+        "badge": "Специалист",
+        "highlights": [
+          "Специализация в области промышленного и гражданского строительства",
+          "Строительные конструкции"
+        ]
+      }
+    ],
+    "courses": [
+      {
+        "year": "2026",
+        "hours": "50ч",
+        "title": "Прикладная разработка на Rust и WebAssembly",
+        "provider": "Самостоятельное обучение",
+        "description": "Изучил основы Rust: владение, заимствование, время жизни и трейты. Создал портфолио-сайт на Yew/WASM, чтобы применить концепции в реальном проекте с использованием Cargo.",
+        "tags": [
+          "rust",
+          "yew",
+          "webassembly",
+          "cargo",
+          "асинхронность"
+        ]
+      },
+      {
+        "year": "2025",
+        "hours": "3 месяца",
+        "title": "Разработчик хранилищ данных (DWH)",
+        "provider": "Академия T1 Digital",
+        "description": "Разрабатывал и внедрял архитектуры хранилищ данных на основе MPP. Создавал конвейеры ETL/ELT и рабочие процессы оркестрации данных с использованием Apache Airflow. Развертывал аналитические нагрузки на Greenplum и Arenadata DB.",
+        "tags": [
+          "dwh",
+          "greenplum",
+          "airflow",
+          "etl"
+        ]
+      },
+      {
+        "year": "2023",
+        "hours": "200ч",
+        "title": "Машинное обучение и анализ данных",
+        "provider": "МФТИ и Яндекс",
+        "description": "Программа из 6 модулей: математические основы и Python для анализа данных, обучение с учителем и без учителя, статистический анализ выборок, прикладные задачи Data Science, финальный проект.",
+        "tags": [
+          "машинное обучение",
+          "математика",
+          "scikit-learn",
+          "статистика"
+        ]
+      },
+      {
+        "year": "2020",
+        "hours": "100ч",
+        "title": "Глубокое обучение",
+        "provider": "Московский физико-технический институт (МФТИ) · Повышение квалификации",
+        "description": "Практическое знакомство с архитектурами нейронных сетей в PyTorch",
+        "tags": [
+          "pytorch",
+          "глубокое обучение",
+          "компьютерное зрение",
+          "временные ряды"
+        ]
+      },
+      {
+        "year": "2019",
+        "hours": "18 месяцев",
+        "title": "Разработка программного обеспечения на Python",
+        "provider": "GB, Факультет Python",
+        "description": "Комплексная программа по веб-разработке: backend на Python/Django с REST API и базами данных, а также фронтенд-разработка (JavaScript, Vue/React). Включала практические проекты и командную разработку по Agile-методологии.",
+        "tags": [
+          "python",
+          "django",
+          "проектирование систем",
+          "pyqt",
+          "vue"
+        ]
+      }
+    ],
+    "centered": false
+  },
+  "projects": {
+    "number": "03 — проекты",
+    "title": "Избранные работы",
+    "description": {
+      "label": "view all on github",
+      "href": "https://click.scitechai.ru/gitearad"
+    },
+    "centered": false,
+    "projects": [
+      {
+        "title": "yew-folio",
+        "description": "Личное портфолио, созданное на языке Rust с использованием фреймворка Yew, компилируемое в WebAssembly для высокопроизводительного рендеринга на стороне клиента. Реализована компонентная архитектура с использованием Tailwind CSS.",
+        "tags": [
+          "rust",
+          "yew"
+        ],
+        "gradient": "from-rust-500 via-rust-600 to-rust-800",
+        "version": "v0.1.0",
+        "stars": 1,
+        "forks": 0,
+        "featured": true,
+        "repo_url": "https://click.scitechai.ru/yewfolio"
+      },
+      {
+        "title": "q-mech",
+        "description": "Адаптированная документация SymPy для строительной инженерии. Пошаговые примеры расчётов балок и ферм, включая метод Маколей, интерактивные тетрадки и рабочие процессы верификации методом конечных элементов (FEM).",
+        "tags": [
+          "Python",
+          "simpy",
+          "beam",
+          "truss",
+          "Macaulay"
+        ],
+        "gradient": "from-blue-600 via-indigo-700 to-purple-800",
+        "version": "v1.0.0",
+        "stars": 2,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/qmech"
+      },
+      {
+        "title": "psow",
+        "description": "Технический исследовательский эксперимент по оценке эргономичности, стоимости миграции и гарантий безопасности двух современных стеков — C++20 с Eigen и Rust — для портирования унаследованного FEM-ядра на C++/MFC. Объект исследования умышленно ограничен: один 15-узловой квадратичный треугольный призматический элемент (PSOW), с формулами функций формы, буквально перенесёнными из исходной эталонной реализации (математика сохранена побитово). Проект не является продакшн-кодом: репозиторий служит рабочей тетрадью для инженерных заметок и сравнительных наблюдений перед принятием решения о полной миграции FEM-ядра. Оба порта покрыты идентичным набором тестов: проверка разбиения единицы, свойство Кронекера в узлах, невырожденность якобиана на эталонном элементе и перекрёстная верификация производных с помощью конечных разностей. Исходный вычислительный код был написан третьей стороной и используется здесь в качестве эталонного с согласия автора; лицензирование данного репозитория и любые дальнейшие публикации остаются предметом отдельного соглашения с оригинальным автором.",
+        "tags": [
+          "c++20",
+          "rust",
+          "eigen",
+          "fem",
+          "finite element method",
+          "shape functions",
+          "jacobian",
+          "partition of unity",
+          "kronecker delta",
+          "finite differences",
+          "numerical methods",
+          "scientific computing",
+          "serendipity elements"
+        ],
+        "gradient": "from-emerald-700 via-teal-800 to-slate-900",
+        "version": "v1.0.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/psow"
+      },
+      {
+        "title": "t1dwh",
+        "description": "Академический прототип (2024 — начало 2025), исследующий распределённые архитектурные шаблоны хранилищ данных (DWH) на базе Greenplum (MPP, на основе PostgreSQL) с оркестровкой ETL через Apache Airflow. Проект формализует сравнительную оценку топологий DWH (Kimball 1-2NF vs Inmon 3NF vs Data Vault) и реализует размерную модель Kimball, оптимизированную для OLAP-запросов.\n\nКлючевые инженерные результаты: многоуровневая архитектура данных (Стейджинг, DDS, Дата-Марты); медленно изменяющиеся измерения (SCD Type 2) на основе хэш-контроля изменений (MD5) для отслеживания исторических версий записей; оптимизация движка хранения за счёт колоночной организации данных, алгоритмов сжатия ZSTD/RLE и диапазонного партиционирования.\n\nПодсистема ETL использует postgres_fdw для федеративного доступа к данным, DAG Airflow с XCom для межзадачной координации с сохранением состояния, а также функции PL/pgSQL для инкрементальной загрузки по семантике high-water mark. Прототип обеспечивает идемпотентность операций, строгую обработку исключений с паттернами карантина и анализ уровней изоляции транзакций (Repeatable Read, Serializable) для гарантий согласованности данных.",
+        "tags": [
+          "greenplum",
+          "postgresql",
+          "apache airflow",
+          "dimensional modeling",
+          "kimball",
+          "scd type 2",
+          "columnar storage",
+          "zstd",
+          "rle",
+          "range partitioning",
+          "etl",
+          "data marts"
+        ],
+        "gradient": "bg-gradient-to-r from-fuchsia-600 to-purple-600",
+        "version": "v1.0.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/t1dwh"
+      },
+      {
+        "title": "SteelFrame Hub",
+        "description": "Высоконагруженная корпоративная веб-платформа для компании по производству стальных каркасов, объединяющая онлайн-магазин с комплексными инженерными инструментами. Система включает: надёжный корпоративный сайт, удобную панель управления пользовательскими аккаунтами, динамические калькуляторы цен. Платформа размещает SEO-оптимизированный блог с более чем 200 техническими статьями и интегрирует комплексную систему тестирования с разнообразными викторинами по проектированию конструкций и программированию. Реализована полноценная обратная связь, включая комментарии, рейтинги и лайки во всех модулях.",
+        "tags": [
+          "django",
+          "python",
+          "postgresql",
+          "e-commerce",
+          "blog"
+        ],
+        "gradient": "from-slate-700 via-cyan-800 to-emerald-950",
+        "version": "v1.1.0",
+        "stars": 0,
+        "forks": 0,
+        "featured": false,
+        "repo_url": "https://click.scitechai.ru/scitech"
+      }
+    ]
+  },
+  "contact": {
+    "number": "04 — контакты",
+    "title": "Давайте сделаем что-то стоящее.",
+    "description": "Есть проект, нетривиальная бэкенд-задача — или просто хочется обсудить Python? Пишите, я на связи.",
+    "channels": [
+      {
+        "label": "email",
+        "value": "raduntsev.mv@gmail.com",
+        "icon": "mail",
+        "url": "mailto:raduntsev.mv@gmail.com",
+        "description": "Best for project inquiries"
+      },
+      {
+        "label": "telegram",
+        "value": "@reliable_it",
+        "icon": "telegram",
+        "url": "https://t.me/reliable_it",
+        "description": "Quick replies, usually"
+      },
+      {
+        "label": "github",
+        "value": "@mraduntsev",
+        "icon": "github",
+        "url": "https://github.com/mraduntsev",
+        "description": "Code, issues, PRs"
+      },
+      {
+        "label": "linkedin",
+        "value": "/in/maxim-raduntsev",
+        "icon": "linkedin",
+        "url": "https://linkedin.com/in/maxim-raduntsev",
+        "description": "Professional network"
+      }
+    ],
+    "centered": true
+  },
+  "navbar": {
+    "nav": [
+      { "label": "Обо мне", "href": "#about" },
+      { "label": "Образование", "href": "#education" },
+      { "label": "Проекты", "href": "#projects" },
+      { "label": "Контакты", "href": "#contact" }
+    ],
+    "buttons": {
+      "primary": "Обсудить проект",
+      "outline": "Скачать резюме"
+    }
+  }
+}

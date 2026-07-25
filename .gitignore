@@ -1,0 +1,14 @@
+Cargo.lock
+**/.DS_Store
+**/*.rs.bk
+/assets/me*
+
+debug/
+/dist/
+/target/
+.idea/
+
+.env
+.env.*
+
+rustfmt.toml
