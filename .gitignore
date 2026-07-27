@@ -1,11 +1,12 @@
 Cargo.lock
+**/.DS_Store
+**/*.rs.bk
+/assets/me*
 
-/dist
-/target
+debug/
+/dist/
+/target/
+.idea/
 
-
-# Added by cargo
-#
-# already existing elements were commented out
-
-#/target
+.env
+.env.*

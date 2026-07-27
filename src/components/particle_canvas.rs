@@ -3,14 +3,8 @@ use std::rc::Rc;
 use wasm_bindgen::{JsCast, JsValue, closure::Closure};
 use web_sys::{CanvasRenderingContext2d, HtmlCanvasElement, window};
 use yew::{Html, function_component, html, use_effect_with, use_node_ref};
+use crate::content::Particle;
 
-struct Particle {
-    x: f64,
-    y: f64,
-    size: f64,
-    speed_x: f64,
-    speed_y: f64,
-}
 
 impl Particle {
     fn random(canvas_width: f64, canvas_height: f64) -> Self {

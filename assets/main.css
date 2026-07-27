@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Grid background */
+    .grid-bg {
+        background-image: linear-gradient(to right, rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+        background-size: 48px 48px;
+    }
+
+    .dark .grid-bg {
+        background-image: linear-gradient(to right, rgba(255, 90, 16, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 90, 16, 0.06) 1px, transparent 1px);
+    }
+
+    /* Radial glow */
+    .hero-glow {
+        background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(255, 90, 16, 0.18), transparent 70%);
+    }
+
+    .dark .hero-glow {
+        background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(255, 90, 16, 0.25), transparent 70%);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #404551;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #ff5a10;
+    }
+
+    /* Blinking cursor */
+    .cursor::after {
+        content: '▋';
+        color: #ff5a10;
+        margin-left: 2px;
+        animation: blink 1s steps(2) infinite;
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 0;
+        }
+    }
+
+    /* Gradient text */
+    .gradient-text {
+        background: linear-gradient(135deg, #ff7a38 0%, #ff5a10 50%, #c02e08 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    /* Card hover lift */
+    .card-lift {
+        transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+
+    .card-lift:hover {
+        transform: translateY(-4px);
+    }
+
+    /* Reveal on scroll */
+    .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Nav active underline */
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+        height: 2px;
+        background: linear-gradient(90deg, #ff7a38, #ff5a10);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .3s ease;
+    }
+
+    .nav-link.active::after,
+    .nav-link:hover::after {
+        transform: scaleX(1);
+    }
+}

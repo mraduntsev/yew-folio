@@ -1,0 +1,44 @@
+use yew::prelude::*;
+
+#[derive(Properties, PartialEq)]
+pub struct IconProps {
+    pub name: &'static str,  // "sun", "moon", "download", "arrow-right", etc.
+    #[prop_or(18)]
+    pub size: u32,
+    #[prop_or("currentColor".to_string())]
+    pub color: String,
+    #[prop_or("2".to_string())]
+    pub stroke_width: String,
+    #[prop_or_default]
+    pub class: String,
+}
+
+#[function_component(Icon)]
+pub fn icon(props: &IconProps) -> Html {
+    let size = props.size.to_string();
+    match props.name {
+        "sun" => html! {
+            <svg class={format!("sun-icon hidden dark:block {}", props.class)} xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size.clone()} viewBox="0 0 24 24" fill="none" stroke={props.color.clone()} stroke-width={props.stroke_width.clone()} stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+            </svg>
+        },
+        "moon" => html! {
+            <svg class={format!("moon-icon block dark:hidden {}", props.class)} xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size.clone()} viewBox="0 0 24 24" fill="none" stroke={props.color.clone()} stroke-width={props.stroke_width.clone()} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        },
+        "download" => html! {
+            <svg class={props.class.clone()} xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size.clone()} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width.clone()} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+        },
+        "arrow-right" => html! {
+            <svg class={props.class.clone()} xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size.clone()} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width.clone()} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7"/>
+            </svg>
+        },
+        // ... (mail, github, linkedin, etc.)
+        _ => html! { <></> },
+    }
+}
