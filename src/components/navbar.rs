@@ -1,6 +1,12 @@
 use yew::prelude::*;
-use crate::content::NAV_LINKS;
 use crate::ui::{NavLinkItem, ThemeToggle, Button};
+
+const NAV_LINKS: &[(&str, &str)] = &[
+    ("About", "#about"),
+    ("Education", "#education"),
+    ("Projects", "#projects"),
+    ("Contact", "#contact"),
+];
 
 #[function_component(Navbar)]
 pub fn navbar() -> Html {
@@ -12,7 +18,7 @@ pub fn navbar() -> Html {
                         { "</>" }
                     </div>
                     <span class="font-mono font-semibold tracking-tight">
-                        { "raduntsev" }<span class="text-rust-500">{ ".dev" }</span>
+                        { "maxim" }<span class="text-rust-500">{ ".dev" }</span>
                     </span>
                 </a>
 

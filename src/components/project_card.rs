@@ -2,15 +2,15 @@ use yew::prelude::*;
 
 #[derive(Properties, PartialEq)]
 pub struct ProjectCardProps {
-    pub title: String,
-    pub description: String,
-    pub tags: Vec<String>,
+    pub title: &'static str,
+    pub description: &'static str,
+    pub tags: Vec<&'static str>,
     pub stars: u32,
     pub forks: u32,
-    pub gradient: String,
-    pub version: String,
+    pub gradient: &'static str,
+    pub version: &'static str,
     pub featured: bool,
-    pub repo_url: Option<String>,
+    pub repo_url: Option<AttrValue>,
 }
 
 #[function_component(ProjectCard)]

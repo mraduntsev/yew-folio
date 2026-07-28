@@ -4,7 +4,7 @@ use crate::ui::Icon;
 #[derive(Properties, PartialEq)]
 pub struct ButtonProps {
     #[prop_or_default]
-    pub href: String,
+    pub href: &'static str,
     pub variant: String,       // "primary", "outline", "ghost"
     #[prop_or("sm".into())]
     pub size: String,
@@ -15,7 +15,7 @@ pub struct ButtonProps {
     #[prop_or_default]
     pub onclick: Option<Callback<MouseEvent>>,
     #[prop_or_default]
-    pub class: String,
+    pub class: &'static str,
     pub children: Html,
 }
 
@@ -32,7 +32,7 @@ pub fn button(props: &ButtonProps) -> Html {
             "outline" => "border border-rust-500/40 text-rust-500 hover:bg-rust-500 hover:text-white",
             _ => "",
         },
-        props.class.clone(),
+        props.class,
     );
 
     let inner = html! {
@@ -49,7 +49,7 @@ pub fn button(props: &ButtonProps) -> Html {
 
     if !props.href.is_empty() {
         html! {
-            <a href={props.href.clone()} class={base_class} download={props.href.contains(".pdf").then(|| "resume.pdf")}>
+            <a href={props.href} class={base_class} download={props.href.contains(".pdf").then(|| "resume.pdf")}>
                 { inner }
             </a>
         }

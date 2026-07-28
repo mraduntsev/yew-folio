@@ -1,8 +1,6 @@
 use yew::prelude::*;
-use crate::content::get_hero_data;
-use crate::ui::Button;
-use crate::ui::Icon;
-use crate::ui::Badge;
+use crate::content::{get_hero_data, TextSegment};
+use crate::ui::{Button, Badge, TextHighlight, Typewriter};
 
 #[function_component(Hero)]
 pub fn hero() -> Html {
@@ -22,11 +20,24 @@ pub fn hero() -> Html {
                     <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05]">
                         { "Hi, I'm " }<span class="gradient-text">{ data.name }</span>{ "." }
                         <br/>
-                        { "I build " }<span class="font-mono cursor">{ "fast systems" }</span>
+                        { "I build " }
+                        <Typewriter
+                            words={vec![
+                                "fast systems".into(),
+                                "safe abstractions".into(),
+                                "clean APIs".into(),
+                                "reliable services".into(),
+                            ]}
+                        />
                     </h1>
 
                     <p class="text-lg text-ink-600 dark:text-ink-300 max-w-xl leading-relaxed">
-                        { data.description }
+                        { for data.description.iter().map(|segment| match segment {
+                            TextSegment::Plain(text) => html! { { text } },
+                            TextSegment::Highlight { text, color } => html! {
+                                <TextHighlight color={color.clone()}>{ text }</TextHighlight>
+                            },
+                        }) }
                     </p>
 
                     <div class="flex flex-wrap gap-3 pt-2">
@@ -36,7 +47,7 @@ pub fn hero() -> Html {
                         <Button variant="outline" href={data.links.resume} left_icon="download">
                             { "Download CV" }
                         </Button>
-                        <Button variant="ghost" href={data.links.contact}>
+                        <Button variant="outline" href={data.links.contact}>
                             { "Get in touch" }
                         </Button>
                     </div>
@@ -72,17 +83,17 @@ fn TerminalCard() -> Html {
                     <span class="w-3 h-3 rounded-full bg-red-400"></span>
                     <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
                     <span class="w-3 h-3 rounded-full bg-green-400"></span>
-                    <span class="ml-2 text-xs font-mono text-ink-500">{ "~/raduntsev — zsh" }</span>
+                    <span class="ml-2 text-xs font-mono text-ink-500">{ "~/maxim — zsh" }</span>
                 </div>
                 <div class="p-5 font-mono text-sm leading-relaxed bg-ink-900 text-ink-100">
                     <div><span class="text-rust-400">{ "$" }</span> <span class="text-emerald-400">{ "whoami" }</span></div>
-                    <div class="text-ink-300">{ "raduntsev — backend engineer" }</div>
-                    <div class="mt-2"><span class="text-rust-400">{ "$" }</span> <span class="text-emerald-400">{ "cat" }</span> { "stack.toml" }</div>
+                    <div class="text-ink-300">{ "Maxim — backend engineer" }</div>
+                    <div class="mt-2"><span class="text-rust-400">{ "$" }</span> <span class="text-emerald-400">{ "cat " }</span> { "stack.toml" }</div>
                     <div class="text-ink-300">{ "[languages]" }</div>
                     <div class="text-ink-300 pl-3">{ "rust  = " }<span class="text-rust-400">{ "\"primary\"" }</span></div>
                     <div class="text-ink-300 pl-3">{ "cpp   = " }<span class="text-rust-400">{ "\"daily\"" }</span></div>
                     <div class="text-ink-300 pl-3">{ "python = " }<span class="text-rust-400">{ "\"scripting\"" }</span></div>
-                    <div class="mt-2"><span class="text-rust-400">{ "$" }</span> <span class="text-emerald-400">{ "echo" }</span> { "$FOCUS" }</div>
+                    <div class="mt-2"><span class="text-rust-400">{ "$" }</span> <span class="text-emerald-400">{ "echo " }</span> { "$FOCUS" }</div>
                     <div class="text-ink-300">{ "low-latency · reliability · clean APIs" }</div>
                     <div class="mt-2"><span class="text-rust-400">{ "$" }</span> <span class="cursor"></span></div>
                 </div>

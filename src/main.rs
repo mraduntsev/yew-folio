@@ -20,12 +20,10 @@ fn app() -> Html {
     html! {
         <>
             <Navbar />
-            <main>
-                <Hero />
-                // <About />
-                // <Projects />
-                // <Contact />
-            </main>
+            <Hero />
+            // <About />
+            // <Projects />
+            // <Contact />
             // <Footer />
         </>
     }

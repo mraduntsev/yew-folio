@@ -8,7 +8,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Inter', 'system-ui', 'sans-serif'],
-                mono: ['JetBrains Mono', 'monospace'],
+                mono: ['Manrope', 'monospace'],
             },
             colors: {
                 rust: {
@@ -40,7 +40,7 @@ module.exports = {
             animation: {
                 'float': 'float 6s ease-in-out infinite',
                 'fade-up': 'fadeUp 0.8s ease-out both',
-                'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'ping': 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
             },
             keyframes: {
                 float: {
@@ -50,7 +50,7 @@ module.exports = {
                 fadeUp: {
                     '0%': { opacity: '0', transform: 'translateY(24px)' },
                     '100%': { opacity: '1', transform: 'translateY(0)' },
-                }
+                },
             }
         }
     },
