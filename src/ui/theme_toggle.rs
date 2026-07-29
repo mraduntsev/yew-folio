@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use crate::hooks::use_theme::use_theme;
+use crate::hooks::use_theme;
 use crate::ui::Icon;
 
 #[function_component(ThemeToggle)]

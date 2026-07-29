@@ -38,7 +38,26 @@ pub fn icon(props: &IconProps) -> Html {
                 <path d="M5 12h14M13 5l7 7-7 7"/>
             </svg>
         },
-        // ... (mail, github, linkedin, etc.)
+        "arrow-up" => html! {
+            <svg class={props.class} xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size.clone()} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+        },
+        "bolt" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+        },
+        "shield" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+        },
+        "terminal" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 17l6-6-6-6M12 19h8"/>
+            </svg>
+        },
         _ => html! { <></> },
     }
 }

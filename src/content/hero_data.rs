@@ -38,7 +38,7 @@ pub fn get_hero_data() -> HeroData {
         ],
         links: HeroLinks {
             projects: "#projects",
-            resume: "/resume.pdf",
+            resume: "assets/resume.pdf",
             contact: "#contact",
             github: None,
         },

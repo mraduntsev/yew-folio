@@ -35,7 +35,7 @@ pub fn hero() -> Html {
                         { for data.description.iter().map(|segment| match segment {
                             TextSegment::Plain(text) => html! { { text } },
                             TextSegment::Highlight { text, color } => html! {
-                                <TextHighlight color={color.clone()}>{ text }</TextHighlight>
+                                <TextHighlight color={color}>{ text }</TextHighlight>
                             },
                         }) }
                     </p>

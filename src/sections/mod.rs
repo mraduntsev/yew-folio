@@ -3,6 +3,4 @@ mod contact;
 mod hero;
 mod projects;
 
-pub use crate::{
-    sections::{hero::*, }
-};
+pub use crate::sections::{about::*, hero::*};

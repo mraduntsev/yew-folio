@@ -8,8 +8,16 @@ const NAV_LINKS: &[(&str, &str)] = &[
     ("Contact", "#contact"),
 ];
 
+#[derive(Properties, PartialEq)]
+pub struct NavbarProps {
+    pub active_section: Option<String>,
+}
+
 #[function_component(Navbar)]
-pub fn navbar() -> Html {
+pub fn navbar(props: &NavbarProps) -> Html {
+
+    let _active = &props.active_section;
+
     html! {
         <header id="navbar" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-ink-50/70 dark:bg-ink-950/70 border-b border-ink-200/60 dark:border-ink-800/60">
             <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -30,7 +38,7 @@ pub fn navbar() -> Html {
 
                 <div class="flex items-center gap-3">
                     <ThemeToggle />
-                    <Button variant="outline" href="/resume.pdf" left_icon="download">{ "Resume" }</Button>
+                    <Button variant="outline" href="assets/resume.pdf" left_icon="download">{ "Resume" }</Button>
                     <Button variant="primary" href="#contact" right_icon="arrow-right">{ "Hire me" }</Button>
                 </div>
             </nav>

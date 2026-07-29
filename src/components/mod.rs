@@ -4,4 +4,6 @@ mod navbar;
 mod footer;
 mod particle_canvas;
 
-pub use crate::components::navbar::Navbar;
+pub use crate::{
+    components::{navbar::*, footer::*,}
+};
