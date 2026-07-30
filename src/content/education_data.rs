@@ -36,7 +36,7 @@ pub const EDUCATION_ENTRIES: &[EducationEntry] = &[
         university: "Chelyabinsk State University (CSU)",
         degree: "B.Sc. in Applied Mathematics and Computer Science",
         years: "2016 — 2021",
-        description: "Rigorous program with a deep mathematical foundation.",
+        description: "Rigorous program with a deep mathematical foundation and high selection standards. Graduated with excellent academic standing, focusing on computational systems,   algorithm optimization, and data structures.",
         badge: "B.Sc.",
         highlights: &[
             "GPA: 4.36 / 5.0 — Excellent academic standing",
@@ -49,7 +49,8 @@ pub const EDUCATION_ENTRIES: &[EducationEntry] = &[
         university: "Ural State University of Railway Transport (USURT)",
         degree: "Postgraduate Researcher in Civil Engineering (Degree not conferred)",
         years: "2012 — 2015",
-        description: "Successfully completed the full doctoral-level research cycle.",
+        description: "Successfully completed the full doctoral-level research cycle and coursework in structural engineering. Independently designed, bootstrapped, and executed industrial prototyping and mechanical testing at a manufacturing plant. \
+         Note: The degree was not formally awarded due to administrative restructuring of the department, despite the research and patent being successfully finalized.",
         badge: "Research",
         highlights: &[
             "Co‑inventor of patented structural technology (Patent RU 2535761)",
