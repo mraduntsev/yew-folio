@@ -6,8 +6,8 @@ grades_main: list[tuple[int, str]] = [
     (4, "Database Systems"),
     (4, "Optimization Methods"),
     (5, "Numerical Methods"),
-    (5, "Philosophy"),
-    (4, "History"),
+    (4, "Philosophy"),
+    (5, "History"),
     (4, "Economics"),
     (5, "Calculus"),
     (4, "Algebra"),
@@ -15,7 +15,7 @@ grades_main: list[tuple[int, str]] = [
     (4, "Discrete Mathematics"),
     (5, "Differential Equations"),
     (4, "Russian Language and Speech Culture"),
-    (5, "Theoretical Mechanics"),
+    (4, "Theoretical Mechanics"),
     (5, "Game Theory and Operations Research"),
     (5, "Linear Programming"),
     (4, "Computer Science"),
@@ -44,6 +44,6 @@ print(f"Cumulative Average (Unweighted): {unweighted_gpa:.2f}")
 
 """
 Total courses evaluated: 33
-Sum of grade points: 145
-Cumulative Average (Unweighted): 4.39
+Sum of grade points: 144
+Cumulative Average (Unweighted): 4.36
 """

@@ -8,7 +8,7 @@ mod ui;
 use yew::prelude::*;
 // use sections::{Hero, About, Projects, Contact};
 use components::{Navbar, Footer};
-use sections::{Hero, About, };
+use sections::{Hero, About, Education};
 use crate::hooks::{use_scroll_spy, ScrollSpyProps};
 
 fn main() {
@@ -31,6 +31,7 @@ fn app() -> Html {
             <Navbar active_section={active_section} />
             <Hero />
             <About />
+            <Education />
             // <Projects />
             // <Contact />
             <Footer />

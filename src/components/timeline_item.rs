@@ -7,7 +7,7 @@ pub struct TimelineItemProps {
     pub title: &'static str,
     pub provider: &'static str,
     pub description: &'static str,
-    pub tags: Vec<&'static str>,
+    pub tags: &'static [&'static str],
 }
 
 #[function_component(TimelineItem)]
