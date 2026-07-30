@@ -48,14 +48,13 @@ pub fn button(props: &ButtonProps) -> Html {
     };
 
     if !props.href.is_empty() {
-        // Явно вычисляем опциональное имя для скачивания
         let download_attr = if props.href.contains(".pdf") {
-            Some("resume.pdf") // или Some(yew::virtual_dom::AttrValue::from("resume.pdf"))
+            Some("resume.pdf")
         } else {
             None
         };
         html! {
-            <a href={props.href.clone()} class={base_class} download={download_attr}>
+            <a href={props.href} class={base_class} download={download_attr}>
                 { inner }
             </a>
         }

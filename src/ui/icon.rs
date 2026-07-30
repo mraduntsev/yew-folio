@@ -58,6 +58,23 @@ pub fn icon(props: &IconProps) -> Html {
                 <path d="M4 17l6-6-6-6M12 19h8"/>
             </svg>
         },
+        "book-open" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+        },
+        "check" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+            </svg>
+        },
+        "file-text" => html! {
+            <svg xmlns="http://www.w3.org/2000/svg" width={size.clone()} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={props.stroke_width} stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+            </svg>
+        },
         _ => html! { <></> },
     }
 }

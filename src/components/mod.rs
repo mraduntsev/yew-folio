@@ -3,7 +3,9 @@ mod contact_form;
 mod navbar;
 mod footer;
 mod particle_canvas;
+mod education_card;
+mod timeline_item;
 
 pub use crate::{
-    components::{navbar::*, footer::*,}
+    components::{navbar::*, footer::*, education_card::*, timeline_item::*}
 };
