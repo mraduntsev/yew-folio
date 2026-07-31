@@ -7,5 +7,8 @@ mod education_card;
 mod timeline_item;
 
 pub use crate::{
-    components::{navbar::*, footer::*, education_card::*, timeline_item::*}
+    components::{navbar::*, footer::*, education_card::*,
+                 timeline_item::*, project_card::*,
+                 particle_canvas::*,
+    }
 };

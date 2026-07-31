@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use crate::content::footer_data::{SOCIAL_LINKS, COPYRIGHT};
+use crate::content::{SOCIAL_LINKS, COPYRIGHT};
 use crate::ui::Icon;
 
 #[function_component(Footer)]

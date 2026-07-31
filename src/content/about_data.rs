@@ -1,14 +1,9 @@
+use crate::content::{SectionDescription, SectionHeader};
+
 pub struct Principle {
     pub icon: &'static str,
     pub title: &'static str,
     pub description: &'static str,
-}
-
-pub struct AboutHeader {
-    pub number: &'static str,
-    pub title: &'static str,
-    pub description: Option<&'static str>,
-    pub centered: bool,
 }
 
 pub struct Skill {
@@ -36,10 +31,10 @@ pub const PRINCIPLES: &[Principle] = &[
     },
 ];
 
-pub const ABOUT_SECTION: AboutHeader = AboutHeader {
+pub const ABOUT_SECTION: SectionHeader = SectionHeader {
     number: "01 — about",
     title: "A bit about me",
-    description: {Some("I care about code that's boring in production — predictable, observable, and easy to delete.")},
+    description: Some(SectionDescription::Text("I care about code that's boring in production — predictable, observable, and easy to delete.")),
     centered: false
 };
 

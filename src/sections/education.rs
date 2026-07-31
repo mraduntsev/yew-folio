@@ -1,5 +1,5 @@
 use yew::prelude::*;
-use crate::ui::{Icon, SectionHeader};
+use crate::ui::SectionHeader;
 use crate::components::{EducationCard, TimelineItem};
 use crate::content::{COURSES, EDUCATION_ENTRIES, EDUCATION_SECTION};
 

@@ -4,13 +4,13 @@ use yew::prelude::*;
 pub struct ProjectCardProps {
     pub title: &'static str,
     pub description: &'static str,
-    pub tags: Vec<&'static str>,
+    pub tags: &'static [&'static str],
     pub stars: u32,
     pub forks: u32,
     pub gradient: &'static str,
     pub version: &'static str,
     pub featured: bool,
-    pub repo_url: Option<AttrValue>,
+    pub repo_url: Option<&'static str>,
 }
 
 #[function_component(ProjectCard)]
