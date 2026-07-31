@@ -38,11 +38,11 @@ pub fn button(props: &ButtonProps) -> Html {
     let inner = html! {
         <>
             if let Some(icon) = props.left_icon {
-                <Icon name={icon} size=14 stroke_width="2.5" />
+                <Icon name={icon} size="14" stroke_width="2.5" />
             }
             { props.children.clone() }
             if let Some(icon) = props.right_icon {
-                <Icon name={icon} size=14 stroke_width="2.5" />
+                <Icon name={icon} size="14" stroke_width="2.5" />
             }
         </>
     };

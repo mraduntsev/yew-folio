@@ -7,7 +7,7 @@ mod ui;
 
 use yew::prelude::*;
 use components::{Navbar, Footer, ParticleCanvas};
-use sections::{Hero, About, Education, Projects};
+use sections::{Hero, About, Education, Projects, Contact};
 use hooks::{use_scroll_spy, ScrollSpyProps};
 
 fn main() {
@@ -32,7 +32,7 @@ fn app() -> Html {
             <About />
             <Education />
             <Projects />
-            // <Contact />
+            <Contact />
             <Footer />
             <ParticleCanvas />
         </>

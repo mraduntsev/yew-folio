@@ -25,7 +25,7 @@ pub fn footer() -> Html {
                         download={if link.label == "Resume" { Some("") } else { None }}
                             >
                                 if let Some(icon_name) = link.icon {
-                                    <Icon name={icon_name} size=12 color="currentColor" stroke_width="2.5" />
+                                    <Icon name={icon_name} size="12" color="currentColor" stroke_width="2.5" />
                                 }
                                 { link.label }
                     </a>

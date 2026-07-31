@@ -16,7 +16,7 @@ pub fn education_card(props: &EducationCardProps) -> Html {
             <div class="h-32 bg-gradient-to-br from-rust-500 via-rust-600 to-rust-800 relative overflow-hidden">
                 <div class="absolute inset-0 grid-bg opacity-30"></div>
                 <div class="absolute top-4 left-4 w-14 h-14 rounded-xl bg-white/15 backdrop-blur border border-white/20 flex items-center justify-center">
-                    <Icon name="book-open" size=28 color="white" stroke_width="2" />
+                    <Icon name="book-open" size="28" color="white" stroke_width="2" />
                 </div>
                 <div class="absolute bottom-3 right-4 font-mono text-white/70 text-xs">{ &latest.years }</div>
             </div>
@@ -37,7 +37,7 @@ pub fn education_card(props: &EducationCardProps) -> Html {
                         html! {
                             <div class="flex items-start gap-2.5">
                                 <div class="text-rust-500 mt-0.5 flex-shrink-0">
-                                    <Icon name="check" size=14 color="currentColor" stroke_width="2.5" />
+                                    <Icon name="check" size="14" color="currentColor" stroke_width="2.5" />
                                 </div>
                                 <span class="text-ink-600 dark:text-ink-300">{ h }</span>
                             </div>

@@ -32,7 +32,7 @@ fn render_description(desc: &SectionDescription, centered: bool) -> Html {
                     class="font-mono text-sm text-ink-500 hover:text-rust-500 transition flex items-center gap-1"
                 >
                     { *label }
-                    <Icon name="external-link" size={14} color="currentColor" stroke_width="2" />
+                    <Icon name="external-link" size="14" color="currentColor" stroke_width="2" />
                 </a>
             </div>
         },

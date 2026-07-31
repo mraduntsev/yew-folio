@@ -5,10 +5,11 @@ mod footer;
 mod particle_canvas;
 mod education_card;
 mod timeline_item;
+mod contact_channel;
 
 pub use crate::{
     components::{navbar::*, footer::*, education_card::*,
                  timeline_item::*, project_card::*,
-                 particle_canvas::*,
+                 particle_canvas::*, contact_channel::*, 
     }
 };
