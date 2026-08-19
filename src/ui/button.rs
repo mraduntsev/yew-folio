@@ -18,6 +18,8 @@ pub struct ButtonProps {
     #[prop_or_default]
     pub class: &'static str,
     pub children: Html,
+    #[prop_or_default]
+    pub size_hidden: &'static str,
 }
 
 #[function_component(Button)]
@@ -38,6 +40,7 @@ pub fn button(props: &ButtonProps) -> Html {
                 "border border-rust-500/40 text-rust-500 hover:bg-rust-500 hover:text-white",
             _ => "",
         },
+        props.size_hidden,
         props.class,
     );
 

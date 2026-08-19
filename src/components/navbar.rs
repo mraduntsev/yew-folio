@@ -41,8 +41,8 @@ pub fn navbar(props: &NavbarProps) -> Html {
                 <div class="flex items-center gap-3">
                     <LanguageSwitcher/>
                     <ThemeToggle />
-                    <Button variant="outline" href="assets/resume.pdf" left_icon="download">{ &nav_links.buttons.outline }</Button>
-                    <Button variant="primary" href="#contact" right_icon="arrow-right">{ &nav_links.buttons.primary }</Button>
+                    <Button variant="outline" size_hidden="hidden lg:flex" href="assets/resume.pdf" left_icon="download">{ &nav_links.buttons.outline }</Button>
+                    <Button variant="primary" size_hidden="hidden lg:flex" href="#contact" right_icon="arrow-right">{ &nav_links.buttons.primary }</Button>
                 </div>
             </nav>
         </header>
